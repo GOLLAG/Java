@@ -96,6 +96,38 @@ public class Main {
         System.out.print(count);
     }
 }
+5)
+def find_largest_element(arr):
+    max_element = arr[0]
+    for num in arr:
+        if num > max_element:
+            max_element = num
+    return max_element
+6) find the largest number in the array
+public class LargestElementInArray {
+
+    public static void main(String[] args) {
+        int[] arr = {3, 5, 7, 2, 8, 6, 4, 7, 0, 1};
+
+        int largest = findLargestElement(arr);
+        System.out.println("The largest element in the array is: " + largest);
+    }
+
+    public static int findLargestElement(int[] arr) {
+        // Initialize the maximum element as the first element of the array
+        int maxElement = arr[0];
+
+        // Traverse the array to find the largest element
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > maxElement) {
+                maxElement = arr[i];
+            }
+        }
+
+        return maxElement;
+    }
+}
+
             
             
 
